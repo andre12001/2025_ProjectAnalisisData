@@ -8,12 +8,12 @@ st.title("🛒 Olist E-commerce Dataset Analytics Dashboard")
 # Load data from local CSVs
 @st.cache_data
 def load_data():
-    customers = pd.read_csv("customers_dataset.csv")
-    order_items = pd.read_csv("order_items_dataset.csv")
-    order_payments = pd.read_csv("order_payments_dataset.csv")
-    orders = pd.read_csv("orders_dataset.csv", parse_dates=["order_purchase_timestamp", "order_delivered_customer_date"])
-    products = pd.read_csv("products_dataset.csv")
-    sellers = pd.read_csv("sellers_dataset.csv")
+    customers = pd.read_csv("https://raw.githubusercontent.com/andre12001/2025_ProjectAnalisisData/refs/heads/main/Dataset/customers_dataset.csv")
+    order_items = pd.read_csv("https://raw.githubusercontent.com/andre12001/2025_ProjectAnalisisData/refs/heads/main/Dataset/order_items_dataset.csv")
+    order_payments = pd.read_csv("https://raw.githubusercontent.com/andre12001/2025_ProjectAnalisisData/refs/heads/main/Dataset/order_payments_dataset.csv")
+    orders = pd.read_csv("https://raw.githubusercontent.com/andre12001/2025_ProjectAnalisisData/refs/heads/main/Dataset/orders_dataset.csv", parse_dates=["order_purchase_timestamp", "order_delivered_customer_date"])
+    products = pd.read_csv("https://raw.githubusercontent.com/andre12001/2025_ProjectAnalisisData/refs/heads/main/Dataset/products_dataset.csv")
+    sellers = pd.read_csv("https://raw.githubusercontent.com/andre12001/2025_ProjectAnalisisData/refs/heads/main/Dataset/sellers_dataset.csv")
     return customers, order_items, order_payments, orders, products, sellers
 
 customers_df, order_items_df, order_payments_df, orders_df, products_df, sellers_df = load_data()
