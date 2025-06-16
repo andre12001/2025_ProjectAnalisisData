@@ -1,3 +1,9 @@
+## Anggota
+-  Jefanya Ogrife Gibea Tarigan
+-  Andre Tri Ramadana (231712003)
+-  Zoshim Olyver Wijaya T. Gari (231712017)
+
+
 ## Struktur Relasi 
 
 sellers_dataset -> seller_id
